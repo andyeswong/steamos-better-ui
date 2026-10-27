@@ -99,3 +99,7 @@ de segundos.
 `dev/cdp.mjs` y `dev/cdpshot.mjs` (Node 22+) evaluan JS y sacan capturas de una pagina de Steam
 a traves de un tunel SSH al puerto 8080 del dispositivo. `docs/bitacora.md` cuenta paso a paso
 como se hizo cada parte, que fallo y por que.
+
+## Licencia
+
+MIT. Ver [LICENSE](LICENSE).

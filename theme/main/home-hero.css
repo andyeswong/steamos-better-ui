@@ -1,0 +1,20 @@
+/* Home: el arte del juego seleccionado cubre toda la pantalla (estilo PS5).
+   Steam lo limita a ~70% del alto y lo desvanece con una mascara al 90%. */
+.QNkOtW3xS-yj6LviWHvnd, ._30D-80Lg-Luy-KxOumBlaY {
+  height: 100vh !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+.QNkOtW3xS-yj6LviWHvnd ._1SRoxsfD-XkekIXfr0ofs3 {
+  height: 100vh !important;
+}
+.QNkOtW3xS-yj6LviWHvnd ._1SRoxsfD-XkekIXfr0ofs3 img {
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+
+/* Reflejo difuminado bajo cada caratula (saturate(3) brightness(2) blur):
+   forma la franja oscura y el brillo azul bajo la fila. El PS5 no lo tiene. */
+.ReactVirtualized__Grid__innerScrollContainer ._1H3KfkJV5jxe2CR41DtUi0 {
+  display: none !important;
+}

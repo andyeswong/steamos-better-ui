@@ -1,0 +1,32 @@
+/* Menu de opciones del juego (BasicUIContextMenu, en la pestaña principal):
+   vidrio negro, items transparentes, foco con contorno blanco, Play como el boton
+   PLAY de la ficha (sin verde). Las clases contextMenuItem / Play son legibles, no ofuscadas. */
+.BasicUIContextMenu .oZw50c4oJ6-r0HP8UWv25 {
+  background: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.BasicUIContextMenu .contextMenuItem {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  border-radius: 4px;
+}
+.BasicUIContextMenu .contextMenuItem.gpfocus {
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: inset 0 0 0 1.5px #fff !important;
+  color: #fff !important;
+}
+.BasicUIContextMenu .contextMenuItem.Play {
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 13px;
+  font-weight: 700;
+}
+/* Separadores: linea negra de 2px -> linea blanca tenue de 1px. */
+.BasicUIContextMenu .ixiWPQKqTMxnq43WgT3vj {
+  background: rgba(255, 255, 255, 0.1) !important;
+  height: 1px !important;
+}

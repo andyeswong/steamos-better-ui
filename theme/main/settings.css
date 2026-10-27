@@ -1,0 +1,40 @@
+/* Ajustes: mismo vidrio negro. PageListColumn y DialogContentTransition son clases legibles. */
+
+/* Fondo de la pagina: azul muy oscuro solido -> casi negro del home. */
+._33vqr13-jdnjTkKKTh414f {
+  background: radial-gradient(140% 100% at 0% 0%, #14161b 0%, #07080a 70%) !important;
+}
+/* Columna de secciones: gris solido -> vidrio con borde derecho fino. */
+.PageListColumn {
+  background: rgba(255, 255, 255, 0.035) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+}
+/* Contenido: gris solido -> transparente sobre el fondo. */
+.DialogContentTransition {
+  background: transparent !important;
+}
+
+/* Seccion activa (._1ELdDY...): degradado azul -> relleno blanco tenue con esquinas.
+   Con foco, contorno blanco como el menu lateral. */
+.PageListColumn ._2mL2HfT5AkDXRi1YBnRWKa {
+  margin: 0 8px;
+  border-radius: 4px;
+}
+.PageListColumn ._2mL2HfT5AkDXRi1YBnRWKa._1ELdDY5kb5jxjXe-FpWBo5 {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+.PageListColumn ._2mL2HfT5AkDXRi1YBnRWKa.gpfocus {
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: inset 0 0 0 1.5px #fff !important;
+}
+
+/* Selector de disco (Storage): la pildora blanca rellena -> contorno blanco, texto blanco. */
+._12aBP1DmpEKuMxfFuCMbiN._3VQeLk37GAZSmurTc4HPP6 {
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: inset 0 0 0 1.5px #fff;
+}
+._12aBP1DmpEKuMxfFuCMbiN._3VQeLk37GAZSmurTc4HPP6 * {
+  color: #fff !important;
+  fill: #fff !important;
+}

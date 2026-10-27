@@ -1,0 +1,39 @@
+/* Menu con un juego abierto (boton Steam en partida, pestaña MainMenu_uid2):
+   riel de iconos + panel del juego (Resume game, Controller settings...) + panel derecho
+   (esquema del mando, logros...). Mismo vidrio negro que el resto. */
+
+/* Panel del juego completo: azul oscuro solido -> vidrio; llega hasta abajo como el menu
+   lateral (la barra inferior ya esta oculta). */
+.sfthxkhui6WSgvnbllI_n {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(24px);
+  height: calc(100vh - 40px) !important;
+}
+/* Columna de opciones: degradado azulado con bordes grises de 2px -> vidrio con separador fino. */
+._12NNtyso3nbzJGi2XxHzcN {
+  background: rgba(255, 255, 255, 0.035) !important;
+  border-left: none !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+  height: 100% !important;
+}
+/* Opciones: foco gris solido -> contorno blanco con relleno tenue. */
+._2b6L36XnXUqFHHkGE4_2mv {
+  margin: 0 8px;
+  border-radius: 4px;
+}
+._2b6L36XnXUqFHHkGE4_2mv.gpfocus {
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: inset 0 0 0 1.5px #fff !important;
+  transform: none !important;
+}
+/* Panel derecho: casi opaco -> transparente sobre el vidrio del panel. */
+.RAI0lLN8sCtqCMI36rLiB {
+  background: transparent !important;
+  height: 100% !important;
+}
+/* Boton "Controller settings": gris solido -> contorno. */
+._1T2RsCEMP1dxEe5SbHzxlL {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  border-radius: 4px !important;
+}

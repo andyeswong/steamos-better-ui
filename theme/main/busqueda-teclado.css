@@ -1,0 +1,36 @@
+/* Pagina de resultados de busqueda y teclado en pantalla. */
+
+/* Fondo de resultados: azul marino -> el mismo casi negro del home. */
+.P_AlEAb9tP0lcq1K5lA_z {
+  background: radial-gradient(140% 100% at 0% 0%, #14161b 0%, #07080a 70%) !important;
+}
+/* "IN LIBRARY" bajo cada resultado: mas chico y tenue, como las demas etiquetas. */
+._3RDewhgtNJ5JujhyrIA4DW {
+  font-size: 9px !important;
+  letter-spacing: 0.12em !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* Teclado: panel gris solido -> vidrio negro con borde superior fino. */
+._45rH7-kY4P2uVEb3TxZhm.DefaultTheme {
+  background: rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(24px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Teclas: bloques negros pegados -> teclas de vidrio separadas con esquinas suaves.
+   Las especiales (Tab, Shift, Backspace, Paste...) un poco mas oscuras. */
+._45rH7-kY4P2uVEb3TxZhm ._2KhPXikozxMpbIRo_6jPxW {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+}
+._45rH7-kY4P2uVEb3TxZhm ._2KhPXikozxMpbIRo_6jPxW:is([class*="KeyTheme_Tab"], [class*="KeyTheme_Shift"], [class*="KeyTheme_Caps"], [class*="KeyTheme_Backspace"], [class*="KeyTheme_Enter"], [class*="KeyTheme_VK"]) {
+  background: rgba(0, 0, 0, 0.35) !important;
+}
+/* Tecla con foco: blanca solida con texto oscuro (como ya hace Steam), con esquinas. */
+._45rH7-kY4P2uVEb3TxZhm .gpfocus > ._2KhPXikozxMpbIRo_6jPxW {
+  background: #fff !important;
+  color: #0e141b !important;
+  border-color: #fff !important;
+}

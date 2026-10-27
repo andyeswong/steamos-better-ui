@@ -1,0 +1,83 @@
+/* Vista de juego, opcion 1: estilo PS5 sin reorganizar la vista.
+   Franjas oscuras fuera, degradado a la izquierda para leer, boton Play con
+   contorno blanco, cifras grandes con etiqueta chica. */
+
+/* Franja de Play/cifras: sin fondo (un degradado aqui deja un borde duro arriba). */
+._3scbHORkYB7utTUGfkMCC_ {
+  background: transparent !important;
+}
+/* Capa que cubre todo lo de abajo de la ficha (Play + secciones) con 25% oscuro. */
+._3fp5y6tdU77MdrCQZt_aS9 {
+  background: transparent !important;
+}
+/* "STEAM CLOUD: UP TO DATE": quitar las lineas a los lados. */
+.QvHky2-yJGOkPJG16qeRL::before,
+.QvHky2-yJGOkPJG16qeRL::after {
+  display: none !important;
+}
+
+/* Boton Play: contorno blanco, texto en mayusculas espaciadas (START THE GAME del concepto). */
+.QsZdWtHTlIK9KIKbscNTt {
+  background: transparent !important;
+}
+.QsZdWtHTlIK9KIKbscNTt ._3ydigb6zZAjJ0JCDgHwSYA {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+}
+.QsZdWtHTlIK9KIKbscNTt ._3ydigb6zZAjJ0JCDgHwSYA.gpfocus {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 2px solid #fff !important;
+}
+.QsZdWtHTlIK9KIKbscNTt ._33cnXIqTRgRr49_FNXIHj6 {
+  color: #fff !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.12em !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
+/* Flecha de opciones del Play: misma linea. */
+.QsZdWtHTlIK9KIKbscNTt ._2q-gZ3XJzlvSGHSF-GvSmi {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  border-left: none !important;
+}
+
+/* Cifras: etiqueta chica en mayusculas, valor grande. */
+._34lrt5-Fc3usZU6trA1P0- {
+  font-size: 8px !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+._2TYVGoD27ZMfjRirKQNLfk {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+}
+
+/* Botones de mando y ajustes: cuadros con contorno, sin relleno. */
+._3qDWQGB0rtwM3qpXTb11Q- {
+  background: rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 2px !important;
+}
+._3qDWQGB0rtwM3qpXTb11Q-.gpfocus {
+  border: 2px solid #fff !important;
+}
+
+/* Arte de la ficha a pantalla completa. Hay dos imagenes: la nitida (library_hero,
+   clase HNbe3 sola) mide 92% del alto, y debajo asoma una version de 192x62 px difuminada
+   (library_hero_blur, clase HNbe3 + HSQWw) que hace de fondo: esa es la franja de STEAM CLOUD.
+   Se estira la nitida. */
+img.HNbe3eZf6H7dtJ042x1vM:not(.HSQWw9HUAP6jtA2OZjS-u) {
+  height: 100vh !important;
+  object-fit: cover !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+/* Copia del arte que Steam pone debajo como reflejo (opacidad 0.2): oscurecia la franja inferior. */
+.HNbe3eZf6H7dtJ042x1vM[class*="_3_IUV"] {
+  display: none !important;
+}

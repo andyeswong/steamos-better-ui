@@ -1,0 +1,6 @@
+/* Sin barra inferior de botones (MENU / SELECT / BACK). Fuera a proposito: corta los
+   menus laterales. Sustituye en la practica a home-footer.css (que solo le quitaba el fondo). */
+._3T1iFy2maYycwqgFuzERyf,
+._2JJDHoMl4ArT89aNzlYM3N {
+  display: none !important;
+}

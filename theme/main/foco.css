@@ -1,0 +1,13 @@
+/* Anillo de foco generico de Steam (._1wPpls...): un div aparte que se coloca encima del
+   elemento con foco, con outline blanco al 60%. Se usa en la busqueda / LIBRARY y en otras
+   grillas. Blanco solido de 2px con esquinas de 4px, como el foco de las caratulas del PS5. */
+._1wPplsegQqCoe06wXPhzKT {
+  outline: 2px solid #fff !important;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+/* Resultados de busqueda: esquinas suaves en el arte. */
+._3K3BxF9C7wIjPeECKwAMFj ._1R9r2OBCxAmtuUVrgBEUBw {
+  border-radius: 4px;
+  overflow: hidden;
+}

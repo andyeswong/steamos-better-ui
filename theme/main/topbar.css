@@ -1,0 +1,32 @@
+/* Barra superior (estado + busqueda).
+   Steam pinta la franja con ::before: negro al 50% + backdrop-filter blur(100px) (el blur
+   solo se nota con la busqueda abierta). Se deja el blur, que ya es vidrio, y el negro baja
+   a 35% para que case con los otros paneles. */
+._1E_SL1bTibeQ3PQRBZoS_-::before {
+  background: rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Busqueda: barra blanca a todo lo ancho -> pildora de vidrio negro con contorno. */
+._3F4YRi5x8CjExTV0rOdSL- {
+  background: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  margin: 4px 10px;
+  max-width: calc(100% - 20px);
+  height: 32px !important;
+  box-sizing: border-box;
+}
+/* Lupa y boton de borrar: negros sobre el blanco de Steam -> blancos. */
+._2Ya83QVfgqLema1GlOi9_C,
+._1Ka4TMacsEnWHBXCx3gp52 {
+  color: #fff !important;
+}
+._3F4YRi5x8CjExTV0rOdSL- input {
+  color: #fff !important;
+  height: 100% !important;
+  font-size: 13px !important;
+}
+._3F4YRi5x8CjExTV0rOdSL- input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}

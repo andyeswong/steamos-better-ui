@@ -1,0 +1,25 @@
+/* Home: caratulas de la fila de recientes en cuadrado (estilo PS5).
+   La celda de Steam es 2:3 por un padding-top: 150% en el wrapper de la imagen.
+   Se cambia a 100% y se hacen 1:1 las capas, recortando la imagen.
+   Solo caratulas verticales (library_600x900 / library_capsule): los accesos
+   sin arte, como Moonlight, se quedan igual. */
+.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W:is(:has(img[src*="library_600x900"]), :has(img[src*="library_capsule"])) :is(.WYgDg9NyCcMIVuMyZ_NBC, ._2BOmkMg4r689AAjdLObYs2, ._2GRcKrPZsMSF6glMPRMZei) {
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+}
+.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W:is(:has(img[src*="library_600x900"]), :has(img[src*="library_capsule"])) ._1R9r2OBCxAmtuUVrgBEUBw {
+  padding-top: 100% !important;
+}
+.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W:is(:has(img[src*="library_600x900"]), :has(img[src*="library_capsule"])) img {
+  object-fit: cover !important;
+  object-position: center top !important;
+  height: 100% !important;
+}
+
+/* Titulo y tiempo de juego del seleccionado: de encima de la fila a debajo del cuadro.
+   La etiqueta (.ZkD6We...) va en absoluto con top:-64px (px internos de la fila, escalada 0.7);
+   el cuadro mide 134px, asi que se baja a 134 + 8. */
+.ReactVirtualized__Grid__innerScrollContainer:has(._1pwP4eeP1zQD7PEgmsep0W) .ZkD6We6MqGbOsa9K3yiY3 {
+  top: 142px !important;
+  bottom: auto !important;
+}

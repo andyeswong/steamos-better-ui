@@ -1,0 +1,33 @@
+/* Home: el juego mas reciente (primera celda) tambien en cuadro.
+   Steam le da una celda ancha (442px contra 146px de las demas, en px internos de la
+   fila) con arte horizontal. Se encoge a 146px y se corren las demas 296px a la
+   izquierda para cerrar el hueco. Las celdas van en absoluto con left inline, asi que
+   la primera se reconoce por "left: 0px". Medido en la Ally a 1920x1080.
+   Solo la fila de recientes (:has(._1pwP...)): mas abajo en el home hay otras grillas
+   virtualizadas (What's New...) que el corrimiento encimaba. */
+.ReactVirtualized__Grid__innerScrollContainer:has(._1pwP4eeP1zQD7PEgmsep0W) > [style*="left: 0px"] {
+  width: 146px !important;
+}
+.ReactVirtualized__Grid__innerScrollContainer:has(._1pwP4eeP1zQD7PEgmsep0W) > :not([style*="left: 0px"]) {
+  transform: translateX(-296px);
+}
+.ReactVirtualized__Grid__innerScrollContainer:has(._1pwP4eeP1zQD7PEgmsep0W) > [style*="left: 0px"] ._1HIFNGSxh4-jOhPiDynR4C {
+  width: 134px !important;
+}
+.ReactVirtualized__Grid__innerScrollContainer:has(._1pwP4eeP1zQD7PEgmsep0W) > [style*="left: 0px"] :is(._1pwP4eeP1zQD7PEgmsep0W, .WYgDg9NyCcMIVuMyZ_NBC, ._2BOmkMg4r689AAjdLObYs2, ._2GRcKrPZsMSF6glMPRMZei) {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+}
+.ReactVirtualized__Grid__innerScrollContainer:has(._1pwP4eeP1zQD7PEgmsep0W) > [style*="left: 0px"] .WYgDg9NyCcMIVuMyZ_NBC ._1R9r2OBCxAmtuUVrgBEUBw {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding-top: 0 !important;
+}
+.ReactVirtualized__Grid__innerScrollContainer:has(._1pwP4eeP1zQD7PEgmsep0W) > [style*="left: 0px"] .WYgDg9NyCcMIVuMyZ_NBC img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}

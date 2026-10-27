@@ -1,0 +1,33 @@
+/* Menu de acceso rapido (derecha, pestaña CEF QuickAccess_uid2): vidrio negro como el
+   menu lateral. La ventana es aparte; detras se ve la principal ya oscurecida y difuminada. */
+.V0cr-SAnDhzAWmPZdrJQJ {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(20px);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* Columna de iconos: separador fino. */
+._3rjuhFM0LL6GjUamku12u6 {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* Pestaña activa: gris solido -> blanco tenue con contorno blanco. */
+._1S76C3gQf4oOTbLdTMVH0m._2QHMua1-KysYKpszTPAW_O {
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: inset 0 0 0 1.5px #fff;
+  border-radius: 4px;
+}
+/* Cabecera de cada pestaña ("Notifications"...): fondo solido + sombra difusa del mismo
+   azul (box-shadow 7px 12px) que la hace ver como franja -> sin ninguno de los dos. */
+._34nl5vUoFCDYYnmHNL7axB {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* La ventana del acceso rapido mide 429px y termina 40px antes del borde inferior: Steam
+   reserva esa franja para la barra de botones, y el tamaño de la ventana no se cambia con CSS.
+   Para que no parezca cortado, se cierra como tarjeta flotante: borde abajo y esquina redondeada. */
+.V0cr-SAnDhzAWmPZdrJQJ {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom-left-radius: 12px;
+  overflow: hidden;
+}

@@ -1,0 +1,44 @@
+/* Home, parte de abajo (What's New / Friends / Recommended, Recently updated...):
+   el mismo vidrio negro de la ficha y los menus. */
+
+/* Fondo del home: degradado azul marino -> casi negro. */
+._3LYP1SIxyoky-yW9Ug_1fq {
+  background: radial-gradient(140% 100% at 0% 0%, #14161b 0%, #07080a 70%) !important;
+}
+
+/* Tarjetas de noticias (pie con titulo y juego) y de "Recently updated": vidrio. */
+._3FDPeEvssr8wktS3dWB-RO,
+._3OC7iN2ubQiHWLB7r6Bugz {
+  background: rgba(255, 255, 255, 0.045) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  backdrop-filter: blur(12px);
+}
+._3FDPeEvssr8wktS3dWB-RO {
+  border-top: none !important;
+  border-radius: 0 0 6px 6px !important;
+}
+._3OC7iN2ubQiHWLB7r6Bugz {
+  border-radius: 6px !important;
+}
+
+/* Titulos de seccion ("Recently updated on this device"): etiqueta chica en mayusculas,
+   igual que FRIENDS / ACTIVITY en la ficha. */
+._3A_c3YHYd4YIjA8Y-olnPl.NhBU2IYSxZT2-iO1G3ntz {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+/* "3 weeks ago", "This week": mas tenue y en mayusculas chicas. */
+._1xu4iu0Qa3cGcIr-rZAsVb {
+  font-size: 9px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Contador de amigos junto a FRIENDS: pildora verde -> blanco translucido. */
+._38sNQt6oEVaeO9D-gI_Lhl {
+  background: rgba(255, 255, 255, 0.12) !important;
+}

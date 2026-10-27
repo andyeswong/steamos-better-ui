@@ -1,0 +1,123 @@
+/* Ficha de juego, secciones de abajo (Activity / Your stuff / Community / Game info):
+   estilo de la ficha del concepto PS5. Panel casi negro, pestañas en texto chico con la
+   activa en pildora de contorno azul, L1/R1 con contorno, listas planas con separadores. */
+
+/* Fondo de la vista: en vez del gris pizarra, vidrio negro sobre el arte del juego.
+   Se usa la version difuminada del arte que Steam ya carga (library_hero_blur, 192x62):
+   fija a pantalla completa, mas difuminada y oscurecida. */
+._3lDczhulqraStjCitLYJ1K {
+  background: #000 !important;
+}
+img.HNbe3eZf6H7dtJ042x1vM.HSQWw9HUAP6jtA2OZjS-u:not([class*="_3_IUV"]) {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  filter: blur(24px) brightness(0.32) saturate(1.3) !important;
+  transform: scale(1.15);
+  opacity: 1 !important;
+  -webkit-mask-image: none !important;
+}
+
+/* Pestañas. La activa lleva ._3Gp1bACHx__POxmy6Gd3kG (relleno blanco en Steam). */
+._3eEbSktrstBdLk0dVpnKVI {
+  border: 1.5px solid transparent !important;
+  background: transparent !important;
+}
+._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG {
+  border-color: #2d7ff9 !important;
+}
+._3eEbSktrstBdLk0dVpnKVI ._1nq0ibcuVEbRv0z_wk9pIQ {
+  font-size: 10px !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+._3eEbSktrstBdLk0dVpnKVI._3Gp1bACHx__POxmy6Gd3kG ._1nq0ibcuVEbRv0z_wk9pIQ {
+  color: #fff !important;
+}
+
+/* L1 / R1: el glifo es una imagen (cuadro blanco con letras caladas), no se puede
+   recolorear bien. Se oculta y se escribe el texto con ::after sobre un contorno. */
+.N-f57Rtxa8zZD5y8vbm25 {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 4px;
+}
+.N-f57Rtxa8zZD5y8vbm25 img {
+  opacity: 0 !important;
+}
+.N-f57Rtxa8zZD5y8vbm25::after {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+._19z_50-qWZWxcgXfWNtSWb > .N-f57Rtxa8zZD5y8vbm25:first-child::after { content: "L1"; }
+._19z_50-qWZWxcgXfWNtSWb > .N-f57Rtxa8zZD5y8vbm25:last-child::after { content: "R1"; }
+
+/* Barra de pestañas con fondo solido: al bajar, el arte estirado de la ficha asomaba
+   detras de la barra de estado. */
+._2JobstxtZVYF3078DblN2M.kraDlloilH4fW8ppNwg7G {
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(16px);
+}
+
+/* Titulos de seccion (Friends, Activity): etiqueta chica en mayusculas, como
+   "CONTINUE GAME FROM SAVE POINT" en el concepto. */
+._3i0kopAostOz2IDi9HqmeN {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+._30EfXN4e7Ca_0PoATtbeGx {
+  font-size: 9px !important;
+  letter-spacing: 0.1em !important;
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* Tarjetas grises -> vidrio: blanco al 4% sobre el fondo difuminado, borde fino. */
+._31ptFGGMZrSQc5BCX1e5lm,
+.QCKBqF2k_sRLcXJ5qQIEl,
+.NEMXhMlqXOCJwfgWlHXhT,
+._1JlC29Ic6L-QvL-39X_d-X {
+  background: rgba(255, 255, 255, 0.045) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  border-radius: 6px !important;
+  backdrop-filter: blur(12px);
+}
+/* Entrada de actividad: cabecera y cuerpo son dos cajas pegadas; se unen. */
+.QCKBqF2k_sRLcXJ5qQIEl {
+  border-bottom: none !important;
+  border-radius: 6px 6px 0 0 !important;
+}
+.NEMXhMlqXOCJwfgWlHXhT {
+  border-top: none !important;
+  border-radius: 0 0 6px 6px !important;
+}
+
+/* SCROLL TO TOP: de pestaña azul rellena a contorno. */
+._1J21tLst5SEhBPkVRT53UV > div {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  border-bottom: none !important;
+  color: #fff !important;
+  letter-spacing: 0.12em;
+  font-size: 10px !important;
+}
+
+/* Steam monta la ficha con transform-style: preserve-3d (parallax del arte). Eso convierte
+   a esos contenedores en el marco de position: fixed, y el fondo difuminado se iba con el
+   scroll. En plano, el fondo se queda quieto. */
+.NZMJ6g2iVnFsOOp-lDmIP,
+._2gZXhRmKUk68pA28-5ZmGQ,
+._1SvpjsckP9cPRxO6gCBHrw {
+  transform-style: flat !important;
+}

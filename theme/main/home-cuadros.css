@@ -1,16 +1,16 @@
 /* Home: caratulas de la fila de recientes en cuadrado (estilo PS5).
    La celda de Steam es 2:3 por un padding-top: 150% en el wrapper de la imagen.
    Se cambia a 100% y se hacen 1:1 las capas, recortando la imagen.
-   Solo caratulas verticales (library_600x900 / library_capsule): los accesos
-   sin arte, como Moonlight, se quedan igual. */
-.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W:is(:has(img[src*="library_600x900"]), :has(img[src*="library_capsule"])) :is(.WYgDg9NyCcMIVuMyZ_NBC, ._2BOmkMg4r689AAjdLObYs2, ._2GRcKrPZsMSF6glMPRMZei) {
+   Todas las celdas, tambien los accesos sin arte (Moonlight): al principio se excluian y,
+   en cuanto Moonlight dejo de ser el primero, salio vertical en medio de la fila. */
+.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W :is(.WYgDg9NyCcMIVuMyZ_NBC, ._2BOmkMg4r689AAjdLObYs2, ._2GRcKrPZsMSF6glMPRMZei) {
   height: auto !important;
   aspect-ratio: 1 / 1;
 }
-.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W:is(:has(img[src*="library_600x900"]), :has(img[src*="library_capsule"])) ._1R9r2OBCxAmtuUVrgBEUBw {
+.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W ._1R9r2OBCxAmtuUVrgBEUBw {
   padding-top: 100% !important;
 }
-.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W:is(:has(img[src*="library_600x900"]), :has(img[src*="library_capsule"])) img {
+.ReactVirtualized__Grid__innerScrollContainer ._1pwP4eeP1zQD7PEgmsep0W img {
   object-fit: cover !important;
   object-position: center top !important;
   height: 100% !important;
